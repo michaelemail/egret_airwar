@@ -1,0 +1,6 @@
+﻿.idea
+*.log
+vendor
+.vscode
+bin-release
+bin-debug

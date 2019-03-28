@@ -1,0 +1,34 @@
+{
+  "engineVersion": "5.2.16",
+  "compilerVersion": "5.2.16",
+  "template": {},
+  "target": {
+    "current": "web"
+  },
+  "modules": [
+    {
+      "name": "egret"
+    },
+    {
+      "name": "game"
+    },
+    {
+      "name": "tween"
+    },
+    {
+      "name": "assetsmanager"
+    },
+    {
+      "name": "promise"
+    },
+    {
+      "name": "dragonBones"
+    }
+  ],
+  "targets": {
+    "android": {
+      "appname": "airwar",
+      "packagename": "com.companyname"
+    }
+  }
+}

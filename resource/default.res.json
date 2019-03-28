@@ -1,0 +1,75 @@
+{
+	"groups": [
+		{
+			"keys": "bg0_jpg,bg1_jpg",
+			"name": "bg"
+		},
+		{
+			"keys": "ship1_png",
+			"name": "ship"
+		},
+		{
+			"keys": "boss1_png",
+			"name": "boss"
+		},
+		{
+			"keys": "alien1_png",
+			"name": "alien"
+		},
+		{
+			"keys": "bullet1_png",
+			"name": "bullet"
+		},
+		{
+			"keys": "Explode_mc_json,Explode_tex_png",
+			"name": "animation"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "bg/bg0.jpg",
+			"type": "image",
+			"name": "bg0_jpg"
+		},
+		{
+			"url": "bg/bg1.jpg",
+			"type": "image",
+			"name": "bg1_jpg"
+		},
+		{
+			"url": "ship/ship1.png",
+			"type": "image",
+			"name": "ship1_png"
+		},
+		{
+			"url": "boss/boss1.png",
+			"type": "image",
+			"name": "boss1_png"
+		},
+		{
+			"url": "alien/alien1.png",
+			"type": "image",
+			"name": "alien1_png"
+		},
+		{
+			"url": "bullet/bullet1.png",
+			"type": "image",
+			"name": "bullet1_png"
+		},
+		{
+			"url": "animation/Explode_mc.json",
+			"type": "json",
+			"name": "Explode_mc_json"
+		},
+		{
+			"url": "animation/Explode_tex.png",
+			"type": "image",
+			"name": "Explode_tex_png"
+		}
+	]
+}
