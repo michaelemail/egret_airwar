@@ -23,7 +23,8 @@ class Alienclass {
     public onEnterFrame(event: egret.Event) {
 		if (egret.getTimer() - this._BuildTime >= Config.alien["build_speen"]){
 			this._BuildTime = egret.getTimer();
-			let tmpb = Common.createBitmapByName(Config.alien["pic"]);
+			let i = Math.round(Math.random() * 2);
+			let tmpb = Common.createBitmapByName(Config.alien["pic"][i]);
 			
 			tmpb.x = Config.screenWidth * Math.random();
 			tmpb.y = -1 * tmpb.height;

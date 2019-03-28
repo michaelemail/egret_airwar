@@ -15,10 +15,10 @@ class Config {
 
     // ===== 外星人设置 =====
     public static alien : { [key: string]: any ; }={
-        "pic":'alien1_png',
+        "pic":['alien1_png','alien2_png','alien3_png'],
         "point": 50,
         "speen_x":2,
-        "speen_y":5,
+        "speen_y":3,
         "build_speen":1000 / 5 , //毫秒为单位
     }
     // ===== 飞船设置 =====
@@ -27,7 +27,7 @@ class Config {
         "moving_point" : 5,
         "fire_speed" : 1000 / 5, //毫秒为单位
         "bullet" : 1,
-        "bullet_lv" : 2,
+        "bullet_lv" : 1,
     };
     // ===== 分数设置 =====
     public static score:{ [key: string]: any ; }={

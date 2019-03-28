@@ -13,7 +13,7 @@
 			"name": "boss"
 		},
 		{
-			"keys": "alien1_png",
+			"keys": "alien1_png,alien2_png,alien3_png",
 			"name": "alien"
 		},
 		{
@@ -70,6 +70,16 @@
 			"url": "animation/Explode_tex.png",
 			"type": "image",
 			"name": "Explode_tex_png"
+		},
+		{
+			"url": "alien/alien2.png",
+			"type": "image",
+			"name": "alien2_png"
+		},
+		{
+			"url": "alien/alien3.png",
+			"type": "image",
+			"name": "alien3_png"
 		}
 	]
 }
