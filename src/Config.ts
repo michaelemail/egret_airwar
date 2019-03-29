@@ -17,6 +17,7 @@ class Config {
     public static alien : { [key: string]: any ; }={
         "pic":['alien1_png','alien2_png','alien3_png'],
         "point": 50,
+        "life":100,
         "speen_x":2,
         "speen_y":3,
         "build_speen":1000 / 5 , //毫秒为单位
@@ -51,23 +52,23 @@ class Config {
             1 : {
                 // 子弹分配
                 "fire" : [
-                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : 0,"move_y" : -15,"rotation" : 0,},
+                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : 0,"move_y" : -15,"rotation" : 0, "power": 50},
                 ]
             },
             2 : {
                 "fire" : [
-                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : 0,"move_y" : -15,"rotation" : 0,},
-                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : -3,"move_y" : -15,"rotation" : -10,},
-                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : 3,"move_y" : -15,"rotation" : 10,},
+                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : 0,"move_y" : -15,"rotation" : 0, "power": 50},
+                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : -3,"move_y" : -15,"rotation" : -10,"power": 50},
+                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : 3,"move_y" : -15,"rotation" : 10,"power": 50},
                 ]
             },
             3 : {
                 "fire" : [
-                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : 0,"move_y" : -15,"rotation" : 0,},
-                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : -3,"move_y" : -15,"rotation" : -10,},
-                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : 3,"move_y" : -15,"rotation" : 10,},
-                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : -6,"move_y" : -15,"rotation" : -15,},
-                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : 6,"move_y" : -15,"rotation" : 15,},
+                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : 0,"move_y" : -15,"rotation" : 0,"power": 50},
+                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : -3,"move_y" : -15,"rotation" : -10,"power": 50},
+                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : 3,"move_y" : -15,"rotation" : 10,"power": 50},
+                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : -6,"move_y" : -15,"rotation" : -15,"power": 50},
+                    {"pic" : "bullet1_png","satrt_x" : 0,"start_y" : 0,"move_x" : 6,"move_y" : -15,"rotation" : 15,"power": 50},
                 ]
             }
         }

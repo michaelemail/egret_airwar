@@ -10,8 +10,18 @@ class Alienclass {
 	public getAliens(){
 		return this._myBitMaps;
 	}
+	// 扣减生命
+	public abaLife(index:number,point:number){
+		if (this._myConfigs[index]){
+			this._myConfigs[index]["life"]-=point;
+			if (this._myConfigs[index]["life"]<=0){
+				this.removeAlien(index,1);
+			}
+		}
+	}
 	// 小兵死亡 isExp
-	public removeAlien(value:egret.Bitmap,index:number,isExp = 0){
+	public removeAlien(index:number,isExp = 0){
+		let value = this._myBitMaps[index];
 		// 添加爆炸效果
 		if (isExp == 1){
 			this._myMain._animation.buildAni(value.x + value.width / 2 ,value.y + value.height / 2,"Explode_exp1");
@@ -33,6 +43,7 @@ class Alienclass {
 				{
 					// 是否过了半屏，是的话走左边
 					"direction" : tmpb.x > Config.screenWidth / 2,
+					"life" : Config.alien["life"],
 					"speen_x" : Config.alien["speen_x"] + Math.random() * 2,
 					"speen_y" : Config.alien["speen_y"] + Math.random() * 2,
 				}
@@ -52,7 +63,7 @@ class Alienclass {
 				
 				value.y += conf["speen_y"];
 				if (value.y >= Config.screenHeight){
-					this.removeAlien(value,index,0);
+					this.removeAlien(index,0);
 				}
 
 			}

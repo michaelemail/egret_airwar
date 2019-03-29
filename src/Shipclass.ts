@@ -99,12 +99,16 @@ class Shipclass extends egret.Bitmap {
 	// 检察主角的子弹
 	public checkBullets(){
 		// console.log(this._myMain._alien);
+		let ishit:boolean;
 		this._bullets.forEach((v1,i1,a1)=>{
+			ishit = false;
 			this._myMain._alien.getAliens().forEach((v2,i2,a2)=>{
-				if (Common.intersectsBitmap(v1,v2)){
+				if (ishit==false && Common.intersectsBitmap(v1,v2)){
 					this.addScore(Config.alien["point"]);
 					this.removeBullet(v1,i1);
-					this._myMain._alien.removeAlien(v2,i2,1);
+					this._myMain._alien.abaLife(i2,50);
+					// this._myMain._alien.removeAlien(v2,i2,1);
+					ishit = true;
 				}
 			});
 		});
